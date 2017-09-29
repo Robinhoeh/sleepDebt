@@ -1,5 +1,5 @@
 {
-  "name": "sleep_debt",
+  "name": "sleepdebt",
   "version": "1.0.0",
   "description": "calculator to calculate sleep debt",
   "main": "index.js",
