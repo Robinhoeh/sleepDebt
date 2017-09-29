@@ -1,7 +1,7 @@
 {
   "name": "sleep_debt",
   "version": "1.0.0",
-  "description": "",
+  "description": "calculator to calculate sleep debt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/Robinhoeh/sleepDebt#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0"
   }
