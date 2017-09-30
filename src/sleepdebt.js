@@ -27,20 +27,33 @@ The function should be able to match any one of the seven days and return a numb
 */
 
 const getSleepHours = (day) => {
-	if (day === 'monday') {
-		return  8;
+	if (day === 'monday'){
+		let mondayHours = prompt("How many hours sleep do you get on Mondays?");
+	return  mondayHours;
+	
 	} else if (day === 'tuesday') {
-		return 7;
+		let mondayHours = prompt("How many hours sleep do you get on tuesday?");
+		return tuesdayHours;
+
 	} else if (day === 'wednesday') {
-		return 9;
+		let mondayHours = prompt("How many hours sleep do you get on wednesday?");
+		return wednesdayHours;
+
 	} else if (day === 'thursday') {
-		return 4;
+		let mondayHours = prompt("How many hours sleep do you get on thursday?");
+		return thursdayHours;
+
 	} else if (day === 'friday') {
-		return 10;
+		let mondayHours = prompt("How many hours sleep do you get on friday?");
+		return fridayHours;
+
 	} else if (day === 'saturday') {
-		return 8;
+		let mondayHours = prompt("How many hours sleep do you get on saturday?");
+		return saturdayHours;
+
 	} else if (day === 'sunday') {
-		return 6;
+		let mondayHours = prompt("How many hours sleep do you get on sunday?");
+		return sundayHours;
 	}
 }
 
@@ -100,7 +113,7 @@ const calculateSleepDebt = () => {
 	} else if (actualSleepHours > idealSleepHours) {
 		console.log('You got too much sleep maybe');
 	} else if (actualSleepHours < idealSleepHours) {
-		console.log(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours les of sleep per week...`);
+		alert(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours les of sleep per week...`);
 	}
 }
 
