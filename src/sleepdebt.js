@@ -60,8 +60,14 @@ To get the total sleep hours that the user actually slept, declare a new functio
 */
 
 const getActualSleepHours = () => {
-	
+	getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') +
+	getSleepHours('thursday') +getSleepHours('friday') +getSleepHours('saturday') +
+	getSleepHours('sunday');
 }
+
+
+//Inside the getActualSleepHours() function, call the getSleepHours() function for 
+//each day of the week. Add them all together and return the result using the arrow function syntax and implicit return.
 
 
 
