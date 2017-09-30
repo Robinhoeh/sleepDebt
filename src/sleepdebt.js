@@ -44,7 +44,7 @@ const getSleepHours = (day) => {
 	}
 }
 
-console.log( getSleepHours('tuesday') );
+// console.log( getSleepHours('tuesday') );
 
 
 
@@ -60,8 +60,12 @@ To get the total sleep hours that the user actually slept, declare a new functio
 */
 
 const getActualSleepHours = () => 
-	getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') +
-	getSleepHours('thursday') +getSleepHours('friday') +getSleepHours('saturday') +
+	getSleepHours('monday') +
+	getSleepHours('tuesday') +
+	getSleepHours('wednesday') +
+	getSleepHours('thursday') +
+	getSleepHours('friday') +
+	getSleepHours('saturday') +
 	getSleepHours('sunday');
 
 //no brackets IMPLIES return  = implicit return
@@ -72,7 +76,8 @@ const getActualSleepHours = () =>
 
 const getIdealSleepHours = () => {
 
-const idealSleepHours = 8;//8 hours is reco by the doc
+let idealSleepHours = prompt('How many hours a night would you like to sleep?');//8 hours is reco by the doc - make dynamic with prompt
+	// if (true) {}
 	return idealSleepHours * 7;//number of days per week
 }
 
@@ -95,7 +100,7 @@ const calculateSleepDebt = () => {
 	} else if (actualSleepHours > idealSleepHours) {
 		console.log('You got too much sleep maybe');
 	} else if (actualSleepHours < idealSleepHours) {
-		console.log(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours more of sleep per week! Good Job!`);
+		console.log(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours les of sleep per week...`);
 	}
 }
 
