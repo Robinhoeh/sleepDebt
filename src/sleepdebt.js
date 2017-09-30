@@ -24,7 +24,7 @@ The function should be able to match any one of the seven days and return a numb
 
 
 
-*/
+*/ 
 
 const getSleepHours = (day) => {
 	if (day === 'monday'){
@@ -36,26 +36,44 @@ const getSleepHours = (day) => {
 	
 	} else if (day === 'tuesday') {
 		let tuesdayHours = parseInt( prompt("How many hours sleep do you get on tuesday?") );
+		if( isNaN(tuesdayHours) ) {
+		alert("Hey, thats not a number still dude!");
+	}
 		return tuesdayHours;
 
 	} else if (day === 'wednesday') {
 		let wednesdayHours = parseInt( prompt("How many hours sleep do you get on wednesday?") );
+		if( isNaN(wednesdayHours) ) {
+		alert("Hey, come on!");
+	}
 		return wednesdayHours;
 
 	} else if (day === 'thursday') {
 		let thursdayHours = parseInt( prompt("How many hours sleep do you get on thursday?") );
+		if( isNaN(thursdayHours) ) {
+		alert("WOW PUT IN A NUMBER!");
+	}
 		return thursdayHours;
 
 	} else if (day === 'friday') {
 		let fridayHours = parseInt( prompt("How many hours sleep do you get on friday?") );
+		if( isNaN(fridayHours) ) {
+		alert("is this Neil?!");
+	}
 		return fridayHours;
 
 	} else if (day === 'saturday') {
 		let saturdayHours = parseInt( prompt("How many hours sleep do you get on saturday?") );
+		if( isNaN(saturdayHours) ) {
+		alert("This is your second last chance to put in a number");
+	}
 		return saturdayHours;
 
 	} else if (day === 'sunday') {
 		let sundayHours = parseInt( prompt("How many hours sleep do you get on sunday?") );
+		if( isNaN(sundayHours) ) {
+		alert("Hey, thats not a number you weirdo. NOW U MADE ME MAD!");
+	}
 		return sundayHours;
 	}
 }
@@ -93,7 +111,9 @@ const getActualSleepHours = () =>
 const getIdealSleepHours = () => {
 
 let idealSleepHours = prompt('How many hours a night would you like to sleep?');//
-	// if (true) {}
+	if (isNaN(idealSleepHours) ) {
+		alert('Number please?');
+	}
 	return idealSleepHours * 7;//number of days per week
 }
 
