@@ -28,31 +28,34 @@ The function should be able to match any one of the seven days and return a numb
 
 const getSleepHours = (day) => {
 	if (day === 'monday'){
-		let mondayHours = prompt("How many hours sleep do you get on Mondays?");
+		let mondayHours = parseInt( prompt("How many hours sleep do you get on Mondays?") );
+		if( isNaN(mondayHours) ) {
+		alert("Hey, thats not a number silly!");
+	}
 	return  mondayHours;
 	
 	} else if (day === 'tuesday') {
-		let tuesdayHours = prompt("How many hours sleep do you get on tuesday?");
+		let tuesdayHours = parseInt( prompt("How many hours sleep do you get on tuesday?") );
 		return tuesdayHours;
 
 	} else if (day === 'wednesday') {
-		let wednesdayHours = prompt("How many hours sleep do you get on wednesday?");
+		let wednesdayHours = parseInt( prompt("How many hours sleep do you get on wednesday?") );
 		return wednesdayHours;
 
 	} else if (day === 'thursday') {
-		let thursdayHours = prompt("How many hours sleep do you get on thursday?");
+		let thursdayHours = parseInt( prompt("How many hours sleep do you get on thursday?") );
 		return thursdayHours;
 
 	} else if (day === 'friday') {
-		let fridayHours = prompt("How many hours sleep do you get on friday?");
+		let fridayHours = parseInt( prompt("How many hours sleep do you get on friday?") );
 		return fridayHours;
 
 	} else if (day === 'saturday') {
-		let saturdayHours = prompt("How many hours sleep do you get on saturday?");
+		let saturdayHours = parseInt( prompt("How many hours sleep do you get on saturday?") );
 		return saturdayHours;
 
 	} else if (day === 'sunday') {
-		let sundayHours = prompt("How many hours sleep do you get on sunday?");
+		let sundayHours = parseInt( prompt("How many hours sleep do you get on sunday?") );
 		return sundayHours;
 	}
 }
@@ -113,7 +116,7 @@ const calculateSleepDebt = () => {
 	} else if (actualSleepHours > idealSleepHours) {
 		alert(`You are actually getting ${actualSleepHours - idealSleepHours} more hours of sleep per week`);
 	} else if (actualSleepHours < idealSleepHours) {
-		alert(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours les of sleep per week...`);
+		alert(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours less of sleep per week...`);
 	}
 }
 
