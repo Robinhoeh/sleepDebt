@@ -88,7 +88,7 @@ const IdealSleepHours = 8;//8 hours is reco by the doc
 
 const calculateSleepDebt = () => {
 	const actualSleepHours = getActualSleepHours();
-	const IdealSleepHours = getIdealSleepHours();
+	const idealSleepHours = getIdealSleepHours();
 
 	if (actualSleepHours === idealSleepHours) {
 		console.log('You have the perfect amount of sleep!');
