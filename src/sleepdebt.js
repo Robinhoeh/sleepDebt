@@ -70,7 +70,7 @@ const getActualSleepHours = () => {
 //each day of the week. Add them all together and return the result using the arrow function syntax and implicit return.
 
 
-
+   
 
 
 
