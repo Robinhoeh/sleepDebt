@@ -32,27 +32,27 @@ const getSleepHours = (day) => {
 	return  mondayHours;
 	
 	} else if (day === 'tuesday') {
-		let mondayHours = prompt("How many hours sleep do you get on tuesday?");
+		let tuesdayHours = prompt("How many hours sleep do you get on tuesday?");
 		return tuesdayHours;
 
 	} else if (day === 'wednesday') {
-		let mondayHours = prompt("How many hours sleep do you get on wednesday?");
+		let wednesdayHours = prompt("How many hours sleep do you get on wednesday?");
 		return wednesdayHours;
 
 	} else if (day === 'thursday') {
-		let mondayHours = prompt("How many hours sleep do you get on thursday?");
+		let thursdayHours = prompt("How many hours sleep do you get on thursday?");
 		return thursdayHours;
 
 	} else if (day === 'friday') {
-		let mondayHours = prompt("How many hours sleep do you get on friday?");
+		let fridayHours = prompt("How many hours sleep do you get on friday?");
 		return fridayHours;
 
 	} else if (day === 'saturday') {
-		let mondayHours = prompt("How many hours sleep do you get on saturday?");
+		let saturdayHours = prompt("How many hours sleep do you get on saturday?");
 		return saturdayHours;
 
 	} else if (day === 'sunday') {
-		let mondayHours = prompt("How many hours sleep do you get on sunday?");
+		let sundayHours = prompt("How many hours sleep do you get on sunday?");
 		return sundayHours;
 	}
 }
@@ -89,7 +89,7 @@ const getActualSleepHours = () =>
 
 const getIdealSleepHours = () => {
 
-let idealSleepHours = prompt('How many hours a night would you like to sleep?');//8 hours is reco by the doc - make dynamic with prompt
+let idealSleepHours = prompt('How many hours a night would you like to sleep?');//
 	// if (true) {}
 	return idealSleepHours * 7;//number of days per week
 }
@@ -109,9 +109,9 @@ const calculateSleepDebt = () => {
 	const idealSleepHours = getIdealSleepHours();
 
 	if (actualSleepHours === idealSleepHours) {
-		console.log('You have the perfect amount of sleep!');
+		alert('Your desired amount of sleep and actual sleep are the same!');
 	} else if (actualSleepHours > idealSleepHours) {
-		console.log('You got too much sleep maybe');
+		alert(`You are actually getting ${actualSleepHours - idealSleepHours} more hours of sleep per week`);
 	} else if (actualSleepHours < idealSleepHours) {
 		alert(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours les of sleep per week...`);
 	}
