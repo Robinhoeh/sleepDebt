@@ -72,8 +72,8 @@ const getActualSleepHours = () =>
 
 const getIdealSleepHours = () => {
 
-const IdealSleepHours = 8;//8 hours is reco by the doc
-	return IdealSleepHours * 7;//number of days per week
+const idealSleepHours = 8;//8 hours is reco by the doc
+	return idealSleepHours * 7;//number of days per week
 }
 
 
@@ -95,8 +95,7 @@ const calculateSleepDebt = () => {
 	} else if (actualSleepHours > idealSleepHours) {
 		console.log('You got too much sleep maybe');
 	} else if (actualSleepHours < idealSleepHours) {
-		console.log(`You said you wanted ${idealSleepHours} hours per week. You are actually getting 
-			${idealSleepHours - actualSleepHours} hours of sleep per week!`);
+		console.log(`You said you wanted ${idealSleepHours} hours per week. You are actually getting ${idealSleepHours - actualSleepHours} hours of sleep per week!`);
 	}
 }
 
